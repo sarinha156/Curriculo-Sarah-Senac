@@ -1,4 +1,4 @@
-## 📄 Atividade Currículo
+## Atividade Currículo
 ### Senac Lapa Tito
 
 Currículo desenvolvido em HTML e CSS como parte da Unidade Curricular 2.
