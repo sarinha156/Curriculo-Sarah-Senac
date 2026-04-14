@@ -1,0 +1,195 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle at 20% 30%, #1a2a4f, transparent 40%),
+        radial-gradient(circle at 80% 70%, #3b82f6, transparent 40%),
+        #0f172a;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MENU (MAIS PREMIUM) */
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 0;
+
+    background: rgba(43, 61, 95, 0.6);
+    backdrop-filter: blur(10px);
+
+    z-index: 10;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+/* underline animado */
+.menu a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* PERFIL */
+.perfil {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+    padding: 40px 20px;
+}
+
+/* BLOCO FOTO */
+.eu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOTO MAIS PREMIUM */
+.perfil img {
+    width: 220px;
+    height: 260px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: solid #fff 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.perfil img:hover {
+    transform: scale(1.03);
+}
+
+/* REDES */
+.redes {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.redes li {
+    list-style: none;
+}
+
+.redes a {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    background: #fff;
+    color: #2b3d5f;
+}
+
+/* TEXTO PERFIL */
+.descricao {
+    max-width: 500px;
+}
+
+.descricao h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.descricao p {
+    color: #dcdcdc;
+    margin-bottom: 15px;
+}
+
+.descricao h2 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+/* SEÇÕES */
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+/* CARDS (GLASS MELHORADO) */
+.card {
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px; 
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* TÍTULOS CARD */
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.card span {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+ul.redes {
+    list-style: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 40px;
+}
